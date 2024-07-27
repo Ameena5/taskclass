@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
 
     <style>
         body{
         
-            /* background-color: red ; */
-        }
+           padding:0px 80px ; 
+
+               }
          .main{
             text-align: center;
-            padding: 100px;
+            height: 40vh;
+            padding:150px 0px;
             font-size: 150px;
-            overflow: hidden;
-            -webkit-text-stroke: 0.5vw rgb(194, 228, 247);
+    
             text-transform: uppercase;
             color: white;
             background-color: black;
-            
+            /* animation:bounce;  */
+            /* animation-name: fadeOutDown;
+
+            animation-duration:1s; */
         
-             /* animation:  text 3s linear infinite alternate ;  */
+             animation:  fadeInDown 3s  2 alternate ;  
          }
+         /* .photo{
+            animation:  fadeOutDown 4s 5s 2 alternate ;  
+        }
+        .photo1{
+        animation: fadeInUp 1s  2 alternate ;  
+
+         } */
+
          .section{ display: flex;
             justify-content: space-between;
             
@@ -67,15 +81,16 @@
  }
          .mdsub1{
             width: 450px;
+            gap: 60px;
          }
         .mdsub2{
-            display: flex;
+            display:block;
             
          }
 
     .section6{
         display: flex;
-        gap: 180px;
+        gap: 80px;
         padding: 30px;
         background-color: black;
         color: white;
@@ -91,9 +106,8 @@
     }
     .section7{
         display: flex;
-        gap: 70px;
         font-size: 25px;
-         padding: 50px;
+          padding:  -80px; 
     }
     .section8{
         display: flex;
@@ -101,6 +115,10 @@
         padding: 50px 50px;
 
     }
+    .award{
+
+         transform: translate(150px , -130px) rotate(30deg);  
+         }
     .el2a{
         display: flex;
         gap: 50px; 
@@ -145,10 +163,9 @@
      .child3b{
         display: flex;
      }
-     .image{
-         animation: image 2s ease-in-out infinite alternate ;
-     }
-
+   .item3{
+    display:flex;
+   }
 
     </style>
 </head>
@@ -189,29 +206,30 @@
 
     </div>
     <div class="section3">
-        <div class="sub1">        <h4>ABOUT COMPANY</h4>
+        <div class="sub1">  
+                  <h4>ABOUT COMPANY</h4>
             <h3>We are a top
                 Digital agency in
                 the world.
         </h3>
     </div>
     <div class="sub2">
-        <img src="https://fxotary.netlify.app/images/about_img_1.jpg" width="400px" class="image">
+        <img src="https://fxotary.netlify.app/images/about_img_1.jpg" width="400px" class="photo" >
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim perferendis alias obcaecati quod architecto quae officiis ex ab eaque, vel corporis dolorum minima nisi dolor repudiandae dolorem provident incidunt cumque?</p>
     </div>
     <div class="sub3">
-        <img src="https://fxotary.netlify.app/images/about_img_2.jpg"  class="image">
+        <img src="https://fxotary.netlify.app/images/about_img_2.jpg"  class="photo">
     </div>
     </div>
 <div class="section4"> 
        <div class="mdsub1">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, a adipisci. Tempora eligendi, rem repudiandae saepe consequatur non perferendis tempore cumque, dignissimos dicta asperiores nam totam eius inventore obcaecati. Modi?</p>
     <h3>View All Services</h3>
-</div>
+</div><hr>
 
 <div class="mdsub2">
-    <p>------></p>
-     <p>WHAT WE DO</p>
+    
+     <h2>------>WHAT WE DO</h2>
      <h2>EXPERTISE FIELD</h2>
 
 </div>
@@ -232,10 +250,10 @@
         <h3>----->LATEST PROJECTS</h3>
         <h1>HERE'S OUR LATEST PROJECTS</h1>
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consectetur quod veritatis pariatur expedita corporis doloremque ipsa repellat quisquam quis ipsam, suscipit, fugiat voluptatibus delectus dolor. Neque dignissimos eaque explicabo!</P>
-        <img src="https://fxotary.netlify.app/images/project_img_1.jpg" width="350px" class="image">
+        <img src="https://fxotary.netlify.app/images/project_img_1.jpg" width="350px" class="photo1">
     </div>
     <div class="lmdsub1">
-        <img src="https://fxotary.netlify.app/images/project_img_2.jpg" width="350px" class="image">
+        <img src="https://fxotary.netlify.app/images/project_img_2.jpg" width="300px" class="photo1">
         <h1>WANT TO SEE MORE PROJECTS</h1>
     </div>
     
@@ -275,7 +293,7 @@
         <h1>Company awards &
             achievements</h1>
             <img src="https://fxotary.netlify.app/images/achivement_img_1.jpg" width="300px">
-            <img src="https://fxotary.netlify.app/images/achivement_img_2.jpg" width="150px"   style="transform: translate(130px , -150px) rotate(30deg);">
+            <img src="https://fxotary.netlify.app/images/achivement_img_2.jpg" width="150px"  class="award" >
         </div>
         <div class="el2">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam itaque magni atque neque corporis quaerat sunt quam odit minus similique magnam, ex eos iste voluptate? Tempore numquam ad iusto ullam.</p>
@@ -323,7 +341,7 @@
 
         </div>
 </div>
-
+<hr><hr>
 <div class="section9">
     <div class="item1">
         <p>    ---->
@@ -335,8 +353,16 @@
     </div>
         <div class="item2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eaque velit incidunt voluptas nobis maxime iste ratione iure voluptates odio ab explicabo magni, repellendus quibusdam mollitia officiis. Possimus, facilis dolore!
+          <br><br>  
+        <div class="item3">
+            <img src="https://images.shiksha.com/mediadata/images/articles/1576158294php50u0Yb.jpeg" width="250px" class="trend"><hr><hr>
+        <img src="https://rb.gy/tsd90w" width="250px" class="trend">
+             
         </div>
 
+        </div>
+        
+  
 </div>
 <div class="section10">
     <div class="sel1">
@@ -346,7 +372,7 @@
 
 </div>
 <h2 class="h3" >Creative Advertising our life became noise.</h2><hr>
-<img src="https://fxotary.netlify.app/images/blog_1.jpg" width="300px">
+<img src="https://fxotary.netlify.app/images/blog_1.jpg" width="250px"><hr><hr>
     </div>
     <div class="sel2">
         <div class="sel1a">    
@@ -355,7 +381,7 @@
        
        </div>
        <h2 class="h3">Creative Advertising our life became noise.</h2><hr>
-       <img src="https://fxotary.netlify.app/images/blog_2.jpg" width="300px">
+       <img src="https://fxotary.netlify.app/images/blog_2.jpg" width="250px"><hr><hr>
        
 
     </div>
@@ -366,7 +392,7 @@
        
        </div>
        <h2 class="h3">Creative Advertising our life became noise.</h2><hr>
-       <img src="https://fxotary.netlify.app/images/blog_3.jpg" width="300px">
+       <img src="https://fxotary.netlify.app/images/blog_3.jpg" width="250px"><hr><hr>
 
 
     </div>
@@ -439,7 +465,7 @@
 
 
 
- <script>
+ <!-- <script>
     ScrollReveal({ reset: true,
         distance:'60px',
         duration:2500,
@@ -448,7 +474,7 @@
      });
      ScrollReveal().reveal('.main,.section2,.sub1,.image,.section3,.section5,.section6,.section8,.section10', { delay: 500,origin:'bottom'});
     
-</script>
+</script> -->
 
 </body>
 </html>

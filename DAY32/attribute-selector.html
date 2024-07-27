@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrribute Selector</title>
+    <style>
+         body{
+            background:linear-gradient(rgb(209, 209, 238) ,rgb(213, 181, 224) ,rgb(169, 214, 246));
+                      }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>APPLICATION FORM</legend>
+        <label for="name">Firstname:</label>
+       <input type="text" id="name"><br><br>
+
+       <label for="lastname">Last name:</label>
+       <input type="text" id="lastname"><br><br>
+
+       <label for="date">Date of birth:</label>
+       <input type="date" id="date"><BR><br>
+
+       <label for="age">Age:</label>
+       <input type="number" id="age"><br><br>
+
+       <label for="number">phone:</label>
+       <input type="tel" id="number" name="countrycode" value="+91"><br><br>
+
+       <label for="gender">Gender:</label>
+       <select name="gender" id="gender">
+        <option value="male">Male </option>
+        <option value="female">Female </option>
+        <option value="other">other </option>
+     </select> <br><br>
+
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" placeholder="Enter email address"><br><br>
+
+     <label for="positions">positions available:</label>
+          
+     <input type="radio" name="positions" id="positions" value=" junior-level developer">junior-level developer<br><br>
+
+     <input type="radio" name="positions" id="positions" value=" mid -level developer">mid-level developer<br><br>
+
+      
+     <input type="radio" name="positions" id="positions" value="senior developer">senior developer<br><br>
+
+     <label for="programming">programming langusge:</label>
+     <input type="checkbox" name="languages" id="languages" value="Java">Java
+     <input type="checkbox" name="languages" id="languages" value="Java script">Java script
+
+     <input type="checkbox" name="languages" id="languages" value="python">python<br><br>
+           
+
+     <label for="pass">password :</label>
+     <input type="password"  name=pass id="pass"><br><br>
+
+
+     <label for="pass">Confirm password :</label>
+     <input type="password"  name=pass id="pass"><br><br>
+      <button class="btn" type="submit"> submit</button>
+      <button class="btn" type="reset">reset</button>
+
+ 
+    </fieldset>
+    
+</body>
+</html>

@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FLEX</title>
     <style>
         body{
-            padding: 20px;
+            padding: 00px 70px ;
             
         }
         .nav{
             display: flex;
-            justify-content: space-evenly;
-           
+            justify-content: space-between;
+            flex-direction: row;
+            position: sticky;
+            top: 0px;
+            color: rgb(130, 143, 240);
         }
         .nav1{
-            display: flex;
+         
             justify-content:flex-start;
             
 
@@ -75,7 +79,7 @@
 </head>
 <body>
     <div class="nav">
-        <h1 class="nav1">=</h1>
+        <h1 class="nav1"><i class="fa-solid fa-bars"></i></>
         <h1>My Food</h1>
         <h1 class="nav3">Mail</h1>
     </div>

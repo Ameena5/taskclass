@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
     <title>Document</title>
     <style>
         body{
-            padding: 80px 120px;
+             padding: 30px  100px; 
             border-radius: 10px;
             background-image: url(https://st5.depositphotos.com/35914836/63548/i/450/depositphotos_635487238-stock-photo-abstract-background-neon-light-motion.jpg);
         }
@@ -17,6 +21,19 @@
             flex-direction:row;
             justify-content:space-between ;
             
+     }
+     .head{
+  display:flex;
+
+  animation:flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+} 
+     @media screen  and (width>768px) and (width<992px)
+          { .head{
+            display: block;
+            background-color: aqua;
+          }
+        
      }
      .child2{
         display: flex;
@@ -33,7 +50,7 @@
         padding: 30px;
      }
      .item1{
-        width: 400px;
+        width: 300px;
      }
   </style>
 
